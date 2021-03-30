@@ -18,7 +18,7 @@ public class HomeWorkApp {
         //5
         System.out.println("\nЗадание №5");
         int[] newArr = initialArray(15,9);
-        //вывод массива который вернул метод
+        //вывод массива который вернул метод.
         String arrInString= "";
         arrInString = arrInString + newArr[0];
         for(int i=1 ; i < newArr.length ; i++){
