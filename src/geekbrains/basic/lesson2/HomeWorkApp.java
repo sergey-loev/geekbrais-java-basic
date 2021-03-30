@@ -36,7 +36,7 @@ public class HomeWorkApp {
         //8***
         System.out.println("\nЗадание №8");
         int[] newarr = {1,2,3,4,5,6,7,8,9,0};
-        int shift = -3;
+        int shift = -13;
         shiftArray(newarr, shift);
     }
 
@@ -241,13 +241,15 @@ public class HomeWorkApp {
         for(int i=1 ; i < arr.length ; i++){
             arrInString = arrInString + "," + arr[i];
         }
-        System.out.println("arr    = ["+ arrInString + "]");
+        System.out.println("arr    = [" + arrInString + "]");
+        //Добавил деление по модулю для избежания избыточности сдвига если сдвиг происходит на количество позиций больше длины массива
+        shift = shift % arr.length;
 
-        if(shift<0){
+        if(shift < 0){
             shift = arr.length + shift;
         }
 
-        while(shift>0) {
+        while(shift > 0) {
 
             int lastElement = arr[arr.length - 1];
 
