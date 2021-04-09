@@ -197,6 +197,7 @@ public class lesson4 {
         if (map[i][j] == eamptyField) return true;
         return false;
     }
+
     public static boolean isCellValid(int x, int y) {
         if (x < 0 || x >= mapSize || y < 0 || y >= mapSize) return false;
         if (map[y][x] == eamptyField) return true;
