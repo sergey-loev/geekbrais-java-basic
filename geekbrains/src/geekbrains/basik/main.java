@@ -1,4 +1,4 @@
 package geekbrains.basik;
 
-public class main {
+public class Main {
 }
