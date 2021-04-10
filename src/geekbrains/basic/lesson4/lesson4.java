@@ -1,5 +1,4 @@
 package geekbrains.basic.lesson4;
-
 import java.util.Random;
 import java.util.Scanner;
 
